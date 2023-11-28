@@ -7,11 +7,9 @@ const Navbar = () => {
     return (
         <header className={styles.myheader}>
             <div className={styles.navbarIzq}>
-                <h1>Izquierda</h1>
+                <h1>Mitienda</h1>
             </div>
-            <div className={styles.myLogo}>
-                <h2>MiTienda</h2>
-            </div>
+
             <div className={styles.navbarDer}>
                 <button onClick={() => navigate("/admin")}>
                     <h1>Soy Admin</h1>
