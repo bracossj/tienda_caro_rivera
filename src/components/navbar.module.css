@@ -1,0 +1,58 @@
+.myheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(228, 92, 82);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+    z-index: 2;
+}
+
+.myheader h2 {
+    margin: 0;
+    color: white;
+}
+
+.myheader button {
+    height: 35px;
+    width: 120px;
+    background-color: rgb(226, 201, 201);
+    border-radius: 25px;
+    border: none;
+}
+
+.myheader button:hover {
+    background-color: rgb(224, 178, 178);
+}
+
+.myheader button h1 {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.myheader .navbarIzq{
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.myheader .myLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.myheader .navbarDer{
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}

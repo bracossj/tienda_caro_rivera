@@ -1,77 +1,87 @@
 [
     {
-        "name": "Guineo Maduro",
-        "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
-        "price": 300
+      "id": 1,
+      "name": "Guineo Maduro",
+      "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
+      "price": 300
     },
     {
-        "name": "Shampoo pantene",
-        "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
-        "price": 2500
+      "id": 2,
+      "name": "Shampoo Pantene",
+      "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
+      "price": 2500
     },
     {
-        "name": "Chocobreak",
-        "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
-        "price": 200
+      "id": 3,
+      "name": "Chocobreak",
+      "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
+      "price": 200
     },
     {
-        "name": "Guineo Maduro",
-        "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
-        "price": 300
+      "id": 4,
+      "name": "Guineo Maduro",
+      "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
+      "price": 300
     },
     {
-        "name": "Shampoo pantene",
-        "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
-        "price": 2500
+      "id": 5,
+      "name": "Shampoo Pantene",
+      "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
+      "price": 2500
     },
     {
-        "name": "Chocobreak",
-        "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
-        "price": 200
+      "id": 6,
+      "name": "Chocobreak",
+      "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
+      "price": 200
     },
     {
-        "name": "Guineo Maduro",
-        "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
-        "price": 300
+      "id": 7,
+      "name": "Guineo Maduro",
+      "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
+      "price": 300
     },
     {
-        "name": "Shampoo pantene",
-        "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
-        "price": 2500
+      "id": 8,
+      "name": "Shampoo Pantene",
+      "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
+      "price": 2500
     },
     {
-        "name": "Chocobreak",
-        "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
-        "price": 200
+      "id": 9,
+      "name": "Chocobreak",
+      "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
+      "price": 200
     },
     {
-        "name": "Guineo Maduro",
-        "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
-        "price": 300
+      "id": 10,
+      "name": "Guineo Maduro",
+      "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
+      "price": 300
     },
     {
-        "name": "Shampoo pantene",
-        "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
-        "price": 2500
+      "id": 11,
+      "name": "Shampoo Pantene",
+      "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
+      "price": 2500
     },
     {
-        "name": "Chocobreak",
-        "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
-        "price": 200
+      "id": 12,
+      "name": "Chocobreak",
+      "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
+      "price": 200
     },
     {
-        "name": "Guineo Maduro",
-        "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
-        "price": 300
+      "id": 13,
+      "name": "Guineo Maduro",
+      "imageURL": "https://lavaquita.co/cdn/shop/products/76b6170a-f1e1-4a92-8622-cee94a659b91_700x700.png?v=1622197616",
+      "price": 300
     },
     {
-        "name": "Shampoo pantene",
-        "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
-        "price": 2500
-    },
-    {
-        "name": "Chocobreak",
-        "imageURL": "https://enmanofood.com/wp-content/uploads/2021/08/Chocobrak-frutal.jpg",
-        "price": 200
+      "id": 14,
+      "name": "Shampoo Pantene",
+      "imageURL": "https://locatelcolombia.vtexassets.com/arquivos/ids/240263/7501006721133_1_SHAMPOO-PANTENE-PRO-V-RESTAURACION-X-400ML.jpg?v=637620881136470000",
+      "price": 2500
     }
-]
+  ]
+  

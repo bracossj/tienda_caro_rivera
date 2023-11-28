@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../components/principal.module.css';
+import listaarticulos from '../components/articles.json';
+import NavbarTienda from './navbar'
 
 function PrincipalPage() {
     const navigate = useNavigate();
@@ -35,30 +37,25 @@ function PrincipalPage() {
 
     return (
         <div className={styles.container}>
-            <header className={styles.myheader}>
-                <h2>MiTienda</h2>
-                <button onClick={gotoadminpage}>
-                    <h1>Soy Admin</h1>
-                </button>
-            </header>
+            <NavbarTienda/>
             <div className={styles.container2}>
                 <div className={styles.container3}>
                     {displayedArticles.map((article) => (
-                        <div key={article.name} className={styles['article-container']}>
+                        <div key={article.id} className={styles.articleContainer}>
                             <img src={article.imageURL} alt={`Imagen de ${article.name}`} />
                             <p>Nombre del producto: {article.name}</p>
                             <p>Precio: {article.price}</p>
                         </div>
                     ))}
-                    <div className={styles.pagination}>
-                        <button onClick={() => changePage(currentPage - 1)} disabled={currentPage === 1}>
-                            Anterior
-                        </button>
-                        <span>{`Página ${currentPage} de ${totalPages}`}</span>
-                        <button onClick={() => changePage(currentPage + 1)} disabled={currentPage === totalPages}>
-                            Siguiente
-                        </button>
-                    </div>
+                </div>
+                <div className={styles.pagination}>
+                    <button onClick={() => changePage(currentPage - 1)} disabled={currentPage === 1}>
+                        Anterior
+                    </button>
+                    <span>{`Página ${currentPage} de ${totalPages}`}</span>
+                    <button onClick={() => changePage(currentPage + 1)} disabled={currentPage === totalPages}>
+                        Siguiente
+                    </button>
                 </div>
             </div>
         </div>
