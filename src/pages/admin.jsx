@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import listaarticulos from '../components/articles.json';
 
 function AdminPage() {
     const [imageURL, setImageURL] = useState('');
     const [articleName, setArticleName] = useState('');
     const [articlePrice, setArticlePrice] = useState('');
     const [articles, setArticles] = useState([]);
+
+    useEffect(() => {
+        const cos = JSON.parse(localStorage.getItem('listaarticulos')) || [];
+        if (cos.length == 0) {
+            localStorage.setItem('listaarticulos', JSON.stringify(listaarticulos));
+        } else {
+            setArticles(cos)
+        }
+    }, []);
 
     const handleImageURLChange = (event) => {
         setImageURL(event.target.value);
@@ -20,11 +30,22 @@ function AdminPage() {
 
     const handleUpload = () => {
         if (imageURL && articleName && articlePrice) {
-            setArticles([...articles, { imageURL, name: articleName, price: articlePrice }]);
-            setImageURL('');
+            const newArticles = [...articles, { name: articleName, imageURL: imageURL, price: articlePrice }];
+            setArticles(newArticles);
+
             setArticleName('');
+            setImageURL('');
             setArticlePrice('');
+
+            localStorage.setItem('listaarticulos', JSON.stringify(newArticles));
         }
+    };
+
+    const handleDelete = (index) => {
+        const updatedArticles = [...articles];
+        updatedArticles.splice(index, 1);
+        setArticles(updatedArticles);
+        localStorage.setItem('listaarticulos', JSON.stringify(updatedArticles));
     };
 
     return (
@@ -54,6 +75,7 @@ function AdminPage() {
                         />
                         <p>Nombre: {article.name}</p>
                         <p>Precio: {article.price}</p>
+                        <button onClick={() => handleDelete(index)}>Eliminar</button>
                     </div>
                 ))}
             </div>
