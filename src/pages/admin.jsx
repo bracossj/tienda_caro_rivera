@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 
 function AdminPage() {
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [imageURL, setImageURL] = useState('');
     const [articleName, setArticleName] = useState('');
     const [articlePrice, setArticlePrice] = useState('');
     const [articles, setArticles] = useState([]);
 
-    const handleImageChange = (event) => {
-        const file = event.target.files[0];
-        setSelectedImage(file);
+    const handleImageURLChange = (event) => {
+        setImageURL(event.target.value);
     };
 
     const handleArticleNameChange = (event) => {
@@ -20,9 +19,9 @@ function AdminPage() {
     };
 
     const handleUpload = () => {
-        if (selectedImage && articleName && articlePrice) {
-            setArticles([...articles, { image: selectedImage, name: articleName, price: articlePrice }]);
-            setSelectedImage(null);
+        if (imageURL && articleName && articlePrice) {
+            setArticles([...articles, { imageURL, name: articleName, price: articlePrice }]);
+            setImageURL('');
             setArticleName('');
             setArticlePrice('');
         }
@@ -31,7 +30,8 @@ function AdminPage() {
     return (
         <div>
             <div>
-                <input type="file" onChange={handleImageChange} />
+                <label>URL de la Imagen:</label>
+                <input type="text" value={imageURL} onChange={handleImageURLChange} />
             </div>
             <div>
                 <label>Nombre del Artículo:</label>
@@ -48,7 +48,7 @@ function AdminPage() {
                 {articles.map((article, index) => (
                     <div key={index}>
                         <img
-                            src={URL.createObjectURL(article.image)}
+                            src={article.imageURL}
                             alt={`Imagen ${index}`}
                             style={{ maxWidth: '200px', maxHeight: '200px', margin: '5px' }}
                         />
