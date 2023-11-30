@@ -43,8 +43,8 @@ function PrincipalPage() {
                     {displayedArticles.map((article) => (
                         <div key={article.id} className={styles.articleContainer}>
                             <img src={article.imageURL} alt={`Imagen de ${article.name}`} />
-                            <p>Nombre del producto: {article.name}</p>
-                            <p>Precio: {article.price}</p>
+                            <p>{article.name}</p>
+                            <p>Precio: ${article.price}</p>
                         </div>
                     ))}
                 </div>
